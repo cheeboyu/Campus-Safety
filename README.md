@@ -62,7 +62,7 @@ To ensure high availability during third-party API congestion or rate limits, th
     python test_app.py
     ```
 
-3. **Configure Environment Variables**: 
+3. **Configure Environment Variables**:
    Create a `.env` file in the root directory of your project folder and add your Google Gemini API key:
    ```env
    GEMINI_API_KEY=your_actual_api_key_here
