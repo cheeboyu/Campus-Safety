@@ -1,0 +1,42 @@
+[
+    {
+        "reporter_name": "Ahmad Faizal",
+        "reporter_contact": "ahmad.faizal@sit.singaporetech.edu.sg",
+        "location": "SIT@Punggol, Canteen Level 2",
+        "visual_evidence": "None",
+        "impact_headcount": 15,
+        "asset_info": "Water Dispenser",
+        "description": "The hot water dispenser is dripping continuously onto the tiled floor, creating a small slippery puddle near the collection tray.",
+        "timestamp": "2026-09-23 22:24:22",
+        "risk_summary": "- Potential hazard reported requiring facility inspection\n- Standard operational risk mitigation needed",
+        "category": "General Maintenance",
+        "severity": "Medium",
+        "operational_impact": "Moderate",
+        "contextual_insights": "Standard facility review recommended to ensure campus safety compliance.",
+        "priority_score": 6.5,
+        "final_priority": "Standard Maintenance Queue",
+        "is_duplicate": "Unique",
+        "status": "Pending Review",
+        "incident_id": "INCIDENT-002"
+    },
+    {
+        "reporter_name": "Rachel Lim",
+        "reporter_contact": "rachel.lim@sit.singaporetech.edu.sg",
+        "location": "SIT@Punggol Coast, Level 1 Study Area",
+        "visual_evidence": "None",
+        "impact_headcount": 1,
+        "asset_info": "Wooden Study Chair",
+        "description": "One of the wooden study chairs has a slightly squeaky leg when sat on, but it is structurally stable and safe to use.",
+        "timestamp": "2026-09-19 23:19:52",
+        "risk_summary": "- Slight auditory distraction due to a squeaky chair leg.\n- No structural instability or immediate fall risk present.",
+        "category": "Structural",
+        "severity": "Low",
+        "operational_impact": "Minor",
+        "contextual_insights": "The report indicates that the wooden study chair remains structurally sound and safe to use. The issue is limited to minor acoustic disturbance affecting a single user, presenting minimal safety concern. Regular facility maintenance can lubricate or tighten the joint during routine inspections.",
+        "priority_score": 1.1,
+        "final_priority": "Standard Maintenance Queue",
+        "is_duplicate": "Unique",
+        "status": "Pending Review",
+        "incident_id": "INCIDENT-001"
+    }
+]
