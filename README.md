@@ -1,4 +1,4 @@
-# SIT Punggol Coast - Campus Safety Hazard Reporting System
+# Campus Safety Hazard Reporting System
 
 A modular, production-grade Python console application designed for front-line campus safety reporting, automated AI risk assessment, intelligent triage routing, persistent JSON data management, and robust input validation at SIT Punggol Coast.
 
