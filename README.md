@@ -16,6 +16,26 @@ The application follows a strict modular architecture to separate concerns, main
 
 ---
 
+
+## 📊 System Execution Flow
+
+The application follows a structured, sequential data pipeline across its modules from user input to persistent storage:
+
+1. **Initialization (`main.py` & `io_manager.py`)**: 
+   - `main.py` boots the application and loops through `display_menu()` to capture user actions.
+2. **Defensive Input Capture (`io_manager.py` ➔ `main.py`)**: 
+   - When a report is submitted, `io_manager.py` collects validated names, contacts, locations, image choices, and character-guarded descriptions, returning them as a dictionary to `main.py`.
+3. **AI Risk Assessment (`main.py` ➔ `ai_manager.py`)**: 
+   - `main.py` hands the record to `ai_manager.py`, which communicates with Gemini using multi-model fallback, retry backoffs, and offline JSON safeguards, returning structured JSON analysis.
+4. **Triage & Logic Processing (`main.py` ➔ `logic_manager.py`)**: 
+   - `logic_manager.py` computes priority scores, determines emergency vs. maintenance routing queues, checks for active duplicate submissions, and sorts records by severity.
+5. **Persistent Storage & Export (`main.py` ➔ `data_manager.py`)**: 
+   - `data_manager.py` assigns a sequential ID (`INCIDENT-001`), saves sorted records into `incidents_database.json`, or generates a professional Excel spreadsheet (`export_safety_report.xlsx`) via `openpyxl`.
+6. **User Output (`io_manager.py`)**: 
+   - `io_manager.py` renders final confirmation receipts, filtered search lists, or status update screens back to the console interface.
+
+---
+
 ## 🛡️ Error Resilience & Cloud Fallback Architecture
 
 To ensure high availability during third-party API congestion or rate limits, the system features a robust fault-tolerant pipeline:
